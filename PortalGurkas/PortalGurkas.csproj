@@ -6,4 +6,27 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\RecursosHumanos\Legajos\" />
+    <Folder Include="Controllers\RecursosHumanos\Bienestar\" />
+    <Folder Include="Controllers\RecursosHumanos\Capacitacion\" />
+    <Folder Include="Controllers\RecursosHumanos\Declaracion\" />
+    <Folder Include="Controllers\RecursosHumanos\Reporte\" />
+    <Folder Include="Controllers\RecursosHumanos\Vacaciones\" />
+    <Folder Include="Controllers\RecursosHumanos\Sucamec\" />
+    <Folder Include="Controllers\RecursosHumanos\Personal\" />
+    <Folder Include="Controllers\RecursosHumanos\Seleccion\" />
+    <Folder Include="Controllers\RecursosHumanos\Reclutamiento\" />
+    <Folder Include="Models\RecursosHumanos\Bienestar\" />
+    <Folder Include="Models\RecursosHumanos\Capacitacion\" />
+    <Folder Include="Models\RecursosHumanos\Declaracion\" />
+    <Folder Include="Models\RecursosHumanos\Legajos\" />
+    <Folder Include="Models\RecursosHumanos\Personal\" />
+    <Folder Include="Models\RecursosHumanos\Reclutamiento\" />
+    <Folder Include="Models\RecursosHumanos\Reporte\" />
+    <Folder Include="Models\RecursosHumanos\Seleccion\" />
+    <Folder Include="Models\RecursosHumanos\Sucamec\" />
+    <Folder Include="Models\RecursosHumanos\Vacaciones\" />
+  </ItemGroup>
+
 </Project>

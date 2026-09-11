@@ -63,85 +63,227 @@
         .dark .page-bg {
             background-image: url('media/images/2600x1200/bg-10-dark.png');
         }
+
+        .login-container {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .login-header {
+            text-align: center;
+            padding-bottom: 18px;
+            border-bottom: 1px solid #d9dee6;
+            margin-bottom: 22px;
+        }
+
+        .login-title {
+            margin: 0;
+            font-size: 34px;
+            line-height: 1.15;
+            font-weight: 700;
+            color: #171b25;
+        }
+
+        .login-card {
+            width: 100%;
+            border-radius: 12px;
+        }
+
+        .login-form {
+            padding: 28px 36px 30px 36px !important;
+        }
+
+        .login-field {
+            margin-bottom: 24px;
+        }
+
+        .login-label {
+            display: block;
+            margin-bottom: 9px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #171b25;
+        }
+
+        .login-password-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            margin-bottom: 9px;
+        }
+
+        .login-forgot {
+            white-space: nowrap;
+            flex-shrink: 0;
+            font-size: 14px;
+            color: #ef0018 !important;
+            text-decoration: none;
+        }
+
+            .login-forgot:hover {
+                color: #d90016 !important;
+            }
+
+        .login-input {
+            height: 49px;
+        }
+
+        .login-submit {
+            width: 100%;
+            height: 49px;
+            margin-top: 4px;
+            background: #ef0018 !important;
+            color: white !important;
+            border: none !important;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .login-submit:hover {
+                background: #d90016 !important;
+            }
+
+        .login-footer {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 28px;
+        }
+
+        .login-footer-line {
+            flex: 1;
+            border-top: 1px solid #d9dee6;
+        }
+
+        .login-footer-text {
+            flex-shrink: 0;
+            white-space: nowrap;
+            font-size: 10px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: #718096;
+        }
     </style>
 
-    <div class="flex items-center justify-center grow bg-center bg-no-repeat page-bg">
-        <div class="kt-card max-w-[370px] w-full">
+    <div class="flex items-center justify-center grow bg-center bg-no-repeat page-bg px-4">
 
-            <form asp-controller="Acceso" method="POST" asp-action="Index" class="kt-card-content flex flex-col gap-5 p-10" id="sign_in_form">
-                <div class="text-center mb-2.5">
-                    <h3 class="text-lg font-medium text-mono leading-none mb-2.5">
-                        Sign in
-                    </h3>
-                    <div class="flex items-center justify-center font-medium">
-                        <span class="text-sm text-secondary-foreground me-1.5">
-                            Need an account?
-                        </span>
-                        <a class="text-sm link" href="html/demo1/authentication/classic/sign-up.html">
-                            Sign up
-                        </a>
-                    </div>
-                </div>
-                <div class="grid grid-cols-2 gap-2.5">
-                    <a class="kt-btn kt-btn-outline justify-center" href="#">
-                        <img alt="" class="size-3.5 shrink-0" src="media/brand-logos/google.svg" />
-                        Use Google
-                    </a>
-                    <a class="kt-btn kt-btn-outline justify-center" href="#">
-                        <img alt="" class="size-3.5 shrink-0 dark:hidden" src="media/brand-logos/apple-black.svg" />
-                        <img alt="" class="size-3.5 shrink-0 light:hidden" src="media/brand-logos/apple-white.svg" />
-                        Use Apple
-                    </a>
-                </div>
-                <div class="flex items-center gap-2">
-                    <span class="border-t border-border w-full">
-                    </span>
-                    <span class="text-xs text-muted-foreground font-medium uppercase">
-                        Or
-                    </span>
-                    <span class="border-t border-border w-full">
-                    </span>
-                </div>
-                <div class="flex flex-col gap-1">
-                    <label class="kt-form-label font-normal text-mono">
-                        Email
-                    </label>
-                    <input class="kt-input" placeholder="email@email.com" type="text" value="" />
-                </div>
-                <div class="flex flex-col gap-1">
-                    <div class="flex items-center justify-between gap-1">
-                        <label class="kt-form-label font-normal text-mono">
-                            Password
+        <div class="login-container">
+
+            <!-- HEADER -->
+            <div class="login-header">
+                <h1 class="login-title">
+                    Acceso al sistema
+                </h1>
+            </div>
+
+
+            <!-- CARD -->
+            <div class="kt-card login-card">
+
+                <form asp-controller="Acceso"
+                      asp-action="Index"
+                      method="POST"
+                      id="sign_in_form"
+                      class="kt-card-content login-form">
+
+                    <!-- USUARIO -->
+                    <div class="login-field">
+
+                        <label class="kt-form-label login-label">
+                            Usuario o correo electrónico
                         </label>
-                        <a class="text-sm kt-link shrink-0" href="html/demo1/authentication/classic/reset-password/enter-email.html">
-                            Forgot Password?
-                        </a>
+
+                        <div class="kt-input login-input">
+
+                            <i class="ki-filled ki-user text-gray-500 text-lg"></i>
+
+                            <input name="usuario"
+                                   type="text"
+                                   autocomplete="username"
+                                   placeholder="Ingresa tu usuario o correo electrónico" />
+
+                        </div>
+
                     </div>
-                    <div class="kt-input" data-kt-toggle-password="true">
-                        <input name="user_password" placeholder="Enter Password" type="password" value="" />
-                        <button class="kt-btn kt-btn-sm kt-btn-ghost kt-btn-icon bg-transparent! -me-1.5" data-kt-toggle-password-trigger="true" type="button">
-                            <span class="kt-toggle-password-active:hidden">
-                                <i class="ki-filled ki-eye text-muted-foreground">
-                                </i>
-                            </span>
-                            <span class="hidden kt-toggle-password-active:block">
-                                <i class="ki-filled ki-eye-slash text-muted-foreground">
-                                </i>
-                            </span>
-                        </button>
+
+
+                    <!-- CONTRASEÑA -->
+                    <div class="login-field">
+
+                        <div class="login-password-header">
+
+                            <label class="kt-form-label login-label"
+                                   style="margin-bottom:0;">
+                                Contraseña
+                            </label>
+
+                            <a href="#"
+                               class="login-forgot">
+                                ¿Olvidaste tu contraseña?
+                            </a>
+
+                        </div>
+
+                        <div class="kt-input login-input"
+                             data-kt-toggle-password="true">
+
+                            <i class="ki-filled ki-lock-2 text-gray-500 text-lg"></i>
+
+                            <input name="user_password"
+                                   type="password"
+                                   autocomplete="current-password"
+                                   placeholder="Ingresa tu contraseña" />
+
+                            <button type="button"
+                                    class="kt-btn kt-btn-sm kt-btn-ghost kt-btn-icon bg-transparent!"
+                                    data-kt-toggle-password-trigger="true">
+
+                                <span class="kt-toggle-password-active:hidden">
+                                    <i class="ki-filled ki-eye text-gray-500"></i>
+                                </span>
+
+                                <span class="hidden kt-toggle-password-active:block">
+                                    <i class="ki-filled ki-eye-slash text-gray-500"></i>
+                                </span>
+
+                            </button>
+
+                        </div>
+
                     </div>
-                </div>
-                <label class="kt-label">
-                    <input class="kt-checkbox kt-checkbox-sm" name="check" type="checkbox" value="1" />
-                    <span class="kt-checkbox-label">
-                        Remember me
-                    </span>
-                </label>
-                <button class="kt-btn kt-btn-primary flex justify-center grow">
-                    Sign In
-                </button>
-            </form>
+
+
+                    <!-- BOTÓN -->
+                    <button type="submit"
+                            class="kt-btn login-submit">
+                        Iniciar sesión
+                    </button>
+
+
+                    <!-- FOOTER -->
+                    <div class="login-footer">
+
+                        <div class="login-footer-line"></div>
+
+                        <span class="login-footer-text">
+                            Acceso exclusivo para personal autorizado
+                        </span>
+
+                        <div class="login-footer-line"></div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
         </div>
+
     </div>
     <!-- End of Page -->
     <!-- Scripts -->

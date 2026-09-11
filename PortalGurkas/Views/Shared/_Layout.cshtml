@@ -218,6 +218,7 @@
                             </div>
 
                             <div class="kt-menu-accordion gap-1 ps-[10px] relative before:absolute before:start-[20px] before:top-0 before:bottom-0 before:border-s before:border-border">
+                               
                                 <div class="kt-menu-item @(currentController == "NumeroTelefonico" ? "active" : "")">
                                     <a class="kt-menu-link border border-transparent items-center grow
                                         @(currentController == "NumeroTelefonico" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
@@ -226,13 +227,11 @@
                                         <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
                                         </span>
                                         <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
-                                            Registro de Número
+                                            Dashboard
                                         </span>
                                     </a>
                                 </div>
-                            </div>
 
-                            <div class="kt-menu-accordion gap-1 ps-[10px] relative before:absolute before:start-[20px] before:top-0 before:bottom-0 before:border-s before:border-border">
                                 <div class="kt-menu-item @(currentController == "RegistroLlamada" ? "active" : "")">
                                     <a class="kt-menu-link border border-transparent items-center grow
                                         @(currentController == "RegistroLlamada" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
@@ -241,12 +240,90 @@
                                         <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
                                         </span>
                                         <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
-                                            Registro de Llamada
+                                            Déficit / Vacantes por sede
                                         </span>
                                     </a>
                                 </div>
-                            </div>
 
+                                <div class="kt-menu-item @(currentController == "RegistroLlamada" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "RegistroLlamada" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="RegistroLlamada" asp-action="RegistroLlamada">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Postulantes
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="kt-menu-item @(currentController == "RegistroLlamada" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "RegistroLlamada" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="RegistroLlamada" asp-action="RegistroLlamada">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Postulantes sin contactar
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="kt-menu-item @(currentController == "RegistroLlamada" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "RegistroLlamada" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="RegistroLlamada" asp-action="RegistroLlamada">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Seguimiento de postulantes
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="kt-menu-item @(currentController == "RegistroLlamada" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "RegistroLlamada" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="RegistroLlamada" asp-action="RegistroLlamada">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Contactos / Llamadas
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="kt-menu-item @(currentController == "RegistroLlamada" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "RegistroLlamada" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="RegistroLlamada" asp-action="RegistroLlamada">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Referidos
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="kt-menu-item @(currentController == "RegistroLlamada" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "RegistroLlamada" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="RegistroLlamada" asp-action="RegistroLlamada">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Lista de exclusión
+                                        </span>
+                                    </a>
+                                </div>
+
+                            </div>
                         </div>
                         <!-- END Reclutamiento -->
 
@@ -271,6 +348,7 @@
                                     </span>
                                 </span>
                             </div>
+                            
                             <div class="kt-menu-accordion gap-1 ps-[10px] relative before:absolute before:start-[20px] before:top-0 before:bottom-0 before:border-s before:border-border">
 
                                 <div class="kt-menu-item @(currentController == "Postulante" ? "active" : "")">
@@ -281,7 +359,7 @@
                                         <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
                                         </span>
                                         <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
-                                            Postulante
+                                            Dashboard
                                         </span>
                                     </a>
                                 </div>
@@ -294,7 +372,85 @@
                                         <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
                                         </span>
                                         <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
-                                            FotoChek
+                                            Procesos de selección
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="kt-menu-item @(currentController == "FotoCheck" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "FotoCheck" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="FotoCheck" asp-action="FotoCheck">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Evaluaciones
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="kt-menu-item @(currentController == "FotoCheck" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "FotoCheck" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="FotoCheck" asp-action="FotoCheck">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Resultados de evaluación
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="kt-menu-item @(currentController == "FotoCheck" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "FotoCheck" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="FotoCheck" asp-action="FotoCheck">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Postulantes aptos
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="kt-menu-item @(currentController == "FotoCheck" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "FotoCheck" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="FotoCheck" asp-action="FotoCheck">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Descartados / Desistimientos
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="kt-menu-item @(currentController == "FotoCheck" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "FotoCheck" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="FotoCheck" asp-action="FotoCheck">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Compatibilidad con vacantes
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="kt-menu-item @(currentController == "FotoCheck" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "FotoCheck" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="FotoCheck" asp-action="FotoCheck">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Pendientes de ingreso
                                         </span>
                                     </a>
                                 </div>
@@ -334,7 +490,7 @@
                                         <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
                                         </span>
                                         <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
-                                            Activo
+                                            Dashboard
                                         </span>
                                     </a>
                                 </div>
@@ -347,7 +503,7 @@
                                         <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
                                         </span>
                                         <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
-                                            Baja
+                                            Trabajadores
                                         </span>
                                     </a>
                                 </div>
@@ -360,7 +516,7 @@
                                         <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
                                         </span>
                                         <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
-                                            Destaque
+                                            Ingresos y Reingresos
                                         </span>
                                     </a>
                                 </div>
@@ -373,7 +529,7 @@
                                         <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
                                         </span>
                                         <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
-                                            Puesto
+                                            Contratos
                                         </span>
                                     </a>
                                 </div>
@@ -386,7 +542,7 @@
                                         <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
                                         </span>
                                         <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
-                                            Certificado Trabajo
+                                            Movimientos laborales
                                         </span>
                                     </a>
                                 </div>
@@ -399,7 +555,7 @@
                                         <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
                                         </span>
                                         <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
-                                            Carta Aviso
+                                            Destaques
                                         </span>
                                     </a>
                                 </div>
@@ -412,20 +568,7 @@
                                         <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
                                         </span>
                                         <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
-                                            Carta Despido
-                                        </span>
-                                    </a>
-                                </div>
-
-                                <div class="kt-menu-item @(currentController == "Constancia" ? "active" : "")">
-                                    <a class="kt-menu-link border border-transparent items-center grow
-                                         @(currentController == "Constancia" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
-                                         hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
-                                       asp-controller="Constancia" asp-action="Constancia">
-                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
-                                        </span>
-                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
-                                            Constancia de Trabajo
+                                            Ceses
                                         </span>
                                     </a>
                                 </div>
@@ -434,91 +577,11 @@
                         </div>
                         <!-- END Personal -->
 
-                        <!-- Trabajadora Social -->
-                        <div class="kt-menu-item @(currentController == "DescansoMedico" ? "here show" : "")" data-kt-menu-item-toggle="accordion" data-kt-menu-item-trigger="click">
-                            <div class="kt-menu-link flex items-center grow cursor-pointer border border-transparent gap-[10px] ps-[10px] pe-[10px] py-[6px]" tabindex="0">
-                                <span class="kt-menu-icon items-start text-muted-foreground w-[20px]">
-                                    <i class="ki-filled ki-user-square text-lg">
-                                    </i>
-                                </span>
-                                <span class="kt-menu-title text-sm font-medium text-foreground kt-menu-item-active:text-primary kt-menu-link-hover:!text-primary">
-                                    Trabajadora Social
-                                </span>
-                                <span class="kt-menu-arrow text-muted-foreground w-[20px] shrink-0 justify-end ms-1 me-[-10px]">
-                                    <span class="inline-flex kt-menu-item-show:hidden">
-                                        <i class="ki-filled ki-plus text-[11px]">
-                                        </i>
-                                    </span>
-                                    <span class="hidden kt-menu-item-show:inline-flex">
-                                        <i class="ki-filled ki-minus text-[11px]">
-                                        </i>
-                                    </span>
-                                </span>
-                            </div>
-                            <div class="kt-menu-accordion gap-1 ps-[10px] relative before:absolute before:start-[20px] before:top-0 before:bottom-0 before:border-s before:border-border">
-
-                                <div class="kt-menu-item @(currentController == "DescansoMedico" ? "active" : "")">
-                                    <a class="kt-menu-link border border-transparent items-center grow
-                                        @(currentController == "DescansoMedico" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
-                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
-                                       asp-controller="DescansoMedico" asp-action="DescansoMedico">
-                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
-                                        </span>
-                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
-                                            Descanso Medico
-                                        </span>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!-- END Trabajadora Social -->
-
-                        <!-- Declaracion -->
-                        <div class="kt-menu-item @(currentController == "PerfilPersonal" ? "here show" : "")" data-kt-menu-item-toggle="accordion" data-kt-menu-item-trigger="click">
-                            <div class="kt-menu-link flex items-center grow cursor-pointer border border-transparent gap-[10px] ps-[10px] pe-[10px] py-[6px]" tabindex="0">
-                                <span class="kt-menu-icon items-start text-muted-foreground w-[20px]">
-                                    <i class="ki-filled ki-check-squared text-lg">
-                                    </i>
-                                </span>
-                                <span class="kt-menu-title text-sm font-medium text-foreground kt-menu-item-active:text-primary kt-menu-link-hover:!text-primary">
-                                    Declaracion
-                                </span>
-                                <span class="kt-menu-arrow text-muted-foreground w-[20px] shrink-0 justify-end ms-1 me-[-10px]">
-                                    <span class="inline-flex kt-menu-item-show:hidden">
-                                        <i class="ki-filled ki-plus text-[11px]">
-                                        </i>
-                                    </span>
-                                    <span class="hidden kt-menu-item-show:inline-flex">
-                                        <i class="ki-filled ki-minus text-[11px]">
-                                        </i>
-                                    </span>
-                                </span>
-                            </div>
-                            <div class="kt-menu-accordion gap-1 ps-[10px] relative before:absolute before:start-[20px] before:top-0 before:bottom-0 before:border-s before:border-border">
-
-                                <div class="kt-menu-item @(currentController == "PerfilPersonal" ? "active" : "")">
-                                    <a class="kt-menu-link border border-transparent items-center grow
-                                        @(currentController == "PerfilPersonal" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
-                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
-                                       asp-controller="PerfilPersonal" asp-action="PerfilPersonal">
-                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
-                                        </span>
-                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
-                                            Perfil Personal
-                                        </span>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!-- Declaracion -->
-
                         <!-- Legajos -->
                         <div class="kt-menu-item @(currentController == "Documento" ? "here show" : "")" data-kt-menu-item-toggle="accordion" data-kt-menu-item-trigger="click">
                             <div class="kt-menu-link flex items-center grow cursor-pointer border border-transparent gap-[10px] ps-[10px] pe-[10px] py-[6px]" tabindex="0">
                                 <span class="kt-menu-icon items-start text-muted-foreground w-[20px]">
-                                    <i class="ki-filled ki-book-square text-lg">
+                                    <i class="ki-filled ki-folder text-lg">
                                     </i>
                                 </span>
                                 <span class="kt-menu-title text-sm font-medium text-foreground kt-menu-item-active:text-primary kt-menu-link-hover:!text-primary">
@@ -545,7 +608,59 @@
                                         <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
                                         </span>
                                         <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
-                                            Documento
+                                            Dashboard
+                                        </span>
+                                    </a>
+                                </div>
+
+                                 <div class="kt-menu-item @(currentController == "Documento" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "Documento" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="Documento" asp-action="Documento">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Legajos digitales
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="kt-menu-item @(currentController == "Documento" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "Documento" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="Documento" asp-action="Documento">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Documentos
+                                        </span>
+                                    </a>
+                                </div>
+
+                                 <div class="kt-menu-item @(currentController == "Documento" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "Documento" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="Documento" asp-action="Documento">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Pendientes / Incompletos
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="kt-menu-item @(currentController == "Documento" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "Documento" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="Documento" asp-action="Documento">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Personal no declarado
                                         </span>
                                     </a>
                                 </div>
@@ -553,6 +668,530 @@
                             </div>
                         </div>
                         <!-- END Legajos -->
+
+                        <!-- Sucamec -->
+                        <div class="kt-menu-item @(currentController == "DescansoMedico" ? "here show" : "")" data-kt-menu-item-toggle="accordion" data-kt-menu-item-trigger="click">
+                            <div class="kt-menu-link flex items-center grow cursor-pointer border border-transparent gap-[10px] ps-[10px] pe-[10px] py-[6px]" tabindex="0">
+                                <span class="kt-menu-icon items-start text-muted-foreground w-[20px]">
+                                    <i class="ki-filled ki-shield text-lg">
+                                    </i>
+                                </span>
+                                <span class="kt-menu-title text-sm font-medium text-foreground kt-menu-item-active:text-primary kt-menu-link-hover:!text-primary">
+                                    Sucamec
+                                </span>
+                                <span class="kt-menu-arrow text-muted-foreground w-[20px] shrink-0 justify-end ms-1 me-[-10px]">
+                                    <span class="inline-flex kt-menu-item-show:hidden">
+                                        <i class="ki-filled ki-plus text-[11px]">
+                                        </i>
+                                    </span>
+                                    <span class="hidden kt-menu-item-show:inline-flex">
+                                        <i class="ki-filled ki-minus text-[11px]">
+                                        </i>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="kt-menu-accordion gap-1 ps-[10px] relative before:absolute before:start-[20px] before:top-0 before:bottom-0 before:border-s before:border-border">
+
+                                <div class="kt-menu-item @(currentController == "DescansoMedico" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "DescansoMedico" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="DescansoMedico" asp-action="DescansoMedico">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Dashboard
+                                        </span>
+                                    </a>
+                                </div>
+
+                                 <div class="kt-menu-item @(currentController == "DescansoMedico" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "DescansoMedico" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="DescansoMedico" asp-action="DescansoMedico">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                                Carnés SUCAMEC
+                                        </span>
+                                    </a>
+                                </div>
+
+                                 <div class="kt-menu-item @(currentController == "DescansoMedico" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "DescansoMedico" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="DescansoMedico" asp-action="DescansoMedico">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Licencias L4
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="kt-menu-item @(currentController == "DescansoMedico" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "DescansoMedico" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="DescansoMedico" asp-action="DescansoMedico">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Vencimientos
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END Sucamec Social -->
+
+                        <!-- Bienestar Social -->
+                        <div class="kt-menu-item @(currentController == "PerfilPersonal" ? "here show" : "")" data-kt-menu-item-toggle="accordion" data-kt-menu-item-trigger="click">
+                            <div class="kt-menu-link flex items-center grow cursor-pointer border border-transparent gap-[10px] ps-[10px] pe-[10px] py-[6px]" tabindex="0">
+                                <span class="kt-menu-icon items-start text-muted-foreground w-[20px]">
+                                    <i class="ki-filled ki-heart-circle text-lg">
+                                    </i>
+                                </span>
+                                <span class="kt-menu-title text-sm font-medium text-foreground kt-menu-item-active:text-primary kt-menu-link-hover:!text-primary">
+                                    Bienestar Social
+                                </span>
+                                <span class="kt-menu-arrow text-muted-foreground w-[20px] shrink-0 justify-end ms-1 me-[-10px]">
+                                    <span class="inline-flex kt-menu-item-show:hidden">
+                                        <i class="ki-filled ki-plus text-[11px]">
+                                        </i>
+                                    </span>
+                                    <span class="hidden kt-menu-item-show:inline-flex">
+                                        <i class="ki-filled ki-minus text-[11px]">
+                                        </i>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="kt-menu-accordion gap-1 ps-[10px] relative before:absolute before:start-[20px] before:top-0 before:bottom-0 before:border-s before:border-border">
+
+                                <div class="kt-menu-item @(currentController == "PerfilPersonal" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "PerfilPersonal" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="PerfilPersonal" asp-action="PerfilPersonal">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Dashboard
+                                        </span>
+                                    </a>
+                                </div>
+
+                                 <div class="kt-menu-item @(currentController == "PerfilPersonal" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "PerfilPersonal" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="PerfilPersonal" asp-action="PerfilPersonal">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Descansos médicos
+                                        </span>
+                                    </a>
+                                </div>
+
+                                 <div class="kt-menu-item @(currentController == "PerfilPersonal" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "PerfilPersonal" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="PerfilPersonal" asp-action="PerfilPersonal">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Subsidios
+                                        </span>
+                                    </a>
+                                </div>
+
+                                 <div class="kt-menu-item @(currentController == "PerfilPersonal" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "PerfilPersonal" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="PerfilPersonal" asp-action="PerfilPersonal">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Licencias
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="kt-menu-item @(currentController == "PerfilPersonal" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "PerfilPersonal" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="PerfilPersonal" asp-action="PerfilPersonal">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Seguimiento social
+                                        </span>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- END Bienestar Social -->
+
+                        <!-- Vacaciones -->
+                        <div class="kt-menu-item @(currentController == "PerfilPersonal" ? "here show" : "")" data-kt-menu-item-toggle="accordion" data-kt-menu-item-trigger="click">
+                            <div class="kt-menu-link flex items-center grow cursor-pointer border border-transparent gap-[10px] ps-[10px] pe-[10px] py-[6px]" tabindex="0">
+                                <span class="kt-menu-icon items-start text-muted-foreground w-[20px]">
+                                    <i class="ki-filled ki-calendar text-lg">
+                                    </i>
+                                </span>
+                                <span class="kt-menu-title text-sm font-medium text-foreground kt-menu-item-active:text-primary kt-menu-link-hover:!text-primary">
+                                    Vacaciones
+                                </span>
+                                <span class="kt-menu-arrow text-muted-foreground w-[20px] shrink-0 justify-end ms-1 me-[-10px]">
+                                    <span class="inline-flex kt-menu-item-show:hidden">
+                                        <i class="ki-filled ki-plus text-[11px]">
+                                        </i>
+                                    </span>
+                                    <span class="hidden kt-menu-item-show:inline-flex">
+                                        <i class="ki-filled ki-minus text-[11px]">
+                                        </i>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="kt-menu-accordion gap-1 ps-[10px] relative before:absolute before:start-[20px] before:top-0 before:bottom-0 before:border-s before:border-border">
+
+                                <div class="kt-menu-item @(currentController == "PerfilPersonal" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "PerfilPersonal" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="PerfilPersonal" asp-action="PerfilPersonal">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Dashboard
+                                        </span>
+                                    </a>
+                                </div>
+
+                                 <div class="kt-menu-item @(currentController == "PerfilPersonal" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "PerfilPersonal" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="PerfilPersonal" asp-action="PerfilPersonal">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Solicitudes
+                                        </span>
+                                    </a>
+                                </div>
+
+                                 <div class="kt-menu-item @(currentController == "PerfilPersonal" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "PerfilPersonal" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="PerfilPersonal" asp-action="PerfilPersonal">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Aprobaciones
+                                        </span>
+                                    </a>
+                                </div>
+
+                                 <div class="kt-menu-item @(currentController == "PerfilPersonal" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "PerfilPersonal" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="PerfilPersonal" asp-action="PerfilPersonal">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Procesamiento
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="kt-menu-item @(currentController == "PerfilPersonal" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "PerfilPersonal" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="PerfilPersonal" asp-action="PerfilPersonal">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Historial
+                                        </span>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- END Vacaciones -->
+
+                        <!-- Capacitaciones -->
+                        <div class="kt-menu-item @(currentController == "PerfilPersonal" ? "here show" : "")" data-kt-menu-item-toggle="accordion" data-kt-menu-item-trigger="click">
+                            <div class="kt-menu-link flex items-center grow cursor-pointer border border-transparent gap-[10px] ps-[10px] pe-[10px] py-[6px]" tabindex="0">
+                                <span class="kt-menu-icon items-start text-muted-foreground w-[20px]">
+                                    <i class="ki-filled ki-teacher text-lg">
+                                    </i>
+                                </span>
+                                <span class="kt-menu-title text-sm font-medium text-foreground kt-menu-item-active:text-primary kt-menu-link-hover:!text-primary">
+                                    Capacitación
+                                </span>
+                                <span class="kt-menu-arrow text-muted-foreground w-[20px] shrink-0 justify-end ms-1 me-[-10px]">
+                                    <span class="inline-flex kt-menu-item-show:hidden">
+                                        <i class="ki-filled ki-plus text-[11px]">
+                                        </i>
+                                    </span>
+                                    <span class="hidden kt-menu-item-show:inline-flex">
+                                        <i class="ki-filled ki-minus text-[11px]">
+                                        </i>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="kt-menu-accordion gap-1 ps-[10px] relative before:absolute before:start-[20px] before:top-0 before:bottom-0 before:border-s before:border-border">
+
+                                <div class="kt-menu-item @(currentController == "PerfilPersonal" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "PerfilPersonal" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="PerfilPersonal" asp-action="PerfilPersonal">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Dashboard
+                                        </span>
+                                    </a>
+                                </div>
+
+                                 <div class="kt-menu-item @(currentController == "PerfilPersonal" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "PerfilPersonal" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="PerfilPersonal" asp-action="PerfilPersonal">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Capacitaciones
+                                        </span>
+                                    </a>
+                                </div>
+
+                                 <div class="kt-menu-item @(currentController == "PerfilPersonal" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "PerfilPersonal" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="PerfilPersonal" asp-action="PerfilPersonal">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Programación
+                                        </span>
+                                    </a>
+                                </div>
+
+                                 <div class="kt-menu-item @(currentController == "PerfilPersonal" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "PerfilPersonal" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="PerfilPersonal" asp-action="PerfilPersonal">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Asistencia
+                                        </span>
+                                    </a>
+                                </div>
+
+                                 <div class="kt-menu-item @(currentController == "PerfilPersonal" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "PerfilPersonal" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="PerfilPersonal" asp-action="PerfilPersonal">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Brecha de capacitación
+                                        </span>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- END Vacaciones -->
+
+                        <!-- Declaraciones -->
+                        <div class="kt-menu-item @(currentController == "PerfilPersonal" ? "here show" : "")" data-kt-menu-item-toggle="accordion" data-kt-menu-item-trigger="click">
+                            <div class="kt-menu-link flex items-center grow cursor-pointer border border-transparent gap-[10px] ps-[10px] pe-[10px] py-[6px]" tabindex="0">
+                                <span class="kt-menu-icon items-start text-muted-foreground w-[20px]">
+                                    <i class="ki-filled ki-document text-lg">
+                                    </i>
+                                </span>
+                                <span class="kt-menu-title text-sm font-medium text-foreground kt-menu-item-active:text-primary kt-menu-link-hover:!text-primary">
+                                    Declaraciones
+                                </span>
+                                <span class="kt-menu-arrow text-muted-foreground w-[20px] shrink-0 justify-end ms-1 me-[-10px]">
+                                    <span class="inline-flex kt-menu-item-show:hidden">
+                                        <i class="ki-filled ki-plus text-[11px]">
+                                        </i>
+                                    </span>
+                                    <span class="hidden kt-menu-item-show:inline-flex">
+                                        <i class="ki-filled ki-minus text-[11px]">
+                                        </i>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="kt-menu-accordion gap-1 ps-[10px] relative before:absolute before:start-[20px] before:top-0 before:bottom-0 before:border-s before:border-border">
+
+                                <div class="kt-menu-item @(currentController == "PerfilPersonal" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "PerfilPersonal" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="PerfilPersonal" asp-action="PerfilPersonal">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Dashboard
+                                        </span>
+                                    </a>
+                                </div>
+
+                                 <div class="kt-menu-item @(currentController == "PerfilPersonal" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "PerfilPersonal" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="PerfilPersonal" asp-action="PerfilPersonal">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Declaraciones
+                                        </span>
+                                    </a>
+                                </div>
+
+                                 <div class="kt-menu-item @(currentController == "PerfilPersonal" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "PerfilPersonal" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="PerfilPersonal" asp-action="PerfilPersonal">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Presentados pendientes
+                                        </span>
+                                    </a>
+                                </div>
+
+                                 <div class="kt-menu-item @(currentController == "PerfilPersonal" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "PerfilPersonal" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="PerfilPersonal" asp-action="PerfilPersonal">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Observados / Rechazados
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="kt-menu-item @(currentController == "PerfilPersonal" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "PerfilPersonal" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="PerfilPersonal" asp-action="PerfilPersonal">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Historial
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END Declaraciones -->
+
+                        <!-- Reporte -->
+                        <div class="kt-menu-item @(currentController == "PerfilPersonal" ? "here show" : "")" data-kt-menu-item-toggle="accordion" data-kt-menu-item-trigger="click">
+                            <div class="kt-menu-link flex items-center grow cursor-pointer border border-transparent gap-[10px] ps-[10px] pe-[10px] py-[6px]" tabindex="0">
+                                <span class="kt-menu-icon items-start text-muted-foreground w-[20px]">
+                                    <i class="ki-filled ki-chart-simple text-lg">
+                                    </i>
+                                </span>
+                                <span class="kt-menu-title text-sm font-medium text-foreground kt-menu-item-active:text-primary kt-menu-link-hover:!text-primary">
+                                    Reporte
+                                </span>
+                                <span class="kt-menu-arrow text-muted-foreground w-[20px] shrink-0 justify-end ms-1 me-[-10px]">
+                                    <span class="inline-flex kt-menu-item-show:hidden">
+                                        <i class="ki-filled ki-plus text-[11px]">
+                                        </i>
+                                    </span>
+                                    <span class="hidden kt-menu-item-show:inline-flex">
+                                        <i class="ki-filled ki-minus text-[11px]">
+                                        </i>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="kt-menu-accordion gap-1 ps-[10px] relative before:absolute before:start-[20px] before:top-0 before:bottom-0 before:border-s before:border-border">
+
+                                <div class="kt-menu-item @(currentController == "PerfilPersonal" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "PerfilPersonal" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="PerfilPersonal" asp-action="PerfilPersonal">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Reportes operativos
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="kt-menu-item @(currentController == "PerfilPersonal" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "PerfilPersonal" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="PerfilPersonal" asp-action="PerfilPersonal">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Reportes de gestión
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="kt-menu-item @(currentController == "PerfilPersonal" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "PerfilPersonal" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="PerfilPersonal" asp-action="PerfilPersonal">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Reportes gerenciales
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="kt-menu-item @(currentController == "PerfilPersonal" ? "active" : "")">
+                                    <a class="kt-menu-link border border-transparent items-center grow
+                                        @(currentController == "PerfilPersonal" ? "kt-menu-item-active:bg-accent/60 kt-menu-item-active:rounded-lg" : "")
+                                        hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]"
+                                       asp-controller="PerfilPersonal" asp-action="PerfilPersonal">
+                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
+                                        </span>
+                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
+                                            Reportes personalizados
+                                        </span>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- END Reporte -->
 
                         <!-- END Recursos Humanos -->
 
@@ -2217,61 +2856,7 @@
                         <!-- END Centro Control -->
 
 
-                        <div class="kt-menu-item pt-2.25 pb-px">
-                            <span class="kt-menu-heading uppercase text-xs font-medium text-muted-foreground ps-[10px] pe-[10px]">
-                                Sucamec
-                            </span>
-                        </div>
-
-                        <div class="kt-menu-item" data-kt-menu-item-toggle="accordion" data-kt-menu-item-trigger="click">
-                            <div class="kt-menu-link flex items-center grow cursor-pointer border border-transparent gap-[10px] ps-[10px] pe-[10px] py-[6px]" tabindex="0">
-                                <span class="kt-menu-icon items-start text-muted-foreground w-[20px]">
-                                    <i class="ki-filled ki-security-user text-lg">
-                                    </i>
-                                </span>
-                                <span class="kt-menu-title text-sm font-medium text-foreground kt-menu-item-active:text-primary kt-menu-link-hover:!text-primary">
-                                    Personal
-                                </span>
-                                <span class="kt-menu-arrow text-muted-foreground w-[20px] shrink-0 justify-end ms-1 me-[-10px]">
-                                    <span class="inline-flex kt-menu-item-show:hidden">
-                                        <i class="ki-filled ki-plus text-[11px]">
-                                        </i>
-                                    </span>
-                                    <span class="hidden kt-menu-item-show:inline-flex">
-                                        <i class="ki-filled ki-minus text-[11px]">
-                                        </i>
-                                    </span>
-                                </span>
-                            </div>
-                            <div class="kt-menu-accordion gap-1 ps-[10px] relative before:absolute before:start-[20px] before:top-0 before:bottom-0 before:border-s before:border-border">
-
-                                <div class="kt-menu-item">
-                                    <a class="kt-menu-link border border-transparent items-center grow kt-menu-item-active:bg-accent/60 dark:menu-item-active:border-border kt-menu-item-active:rounded-lg hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]" href="html/demo1/public-profile/works.html" tabindex="0">
-                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
-                                        </span>
-                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
-                                            Carnet
-                                        </span>
-                                    </a>
-                                </div>
-
-                                <div class="kt-menu-item">
-                                    <a class="kt-menu-link border border-transparent items-center grow kt-menu-item-active:bg-accent/60 dark:menu-item-active:border-border kt-menu-item-active:rounded-lg hover:bg-accent/60 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]" href="html/demo1/public-profile/works.html" tabindex="0">
-                                        <span class="kt-menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 kt-menu-item-active:before:bg-primary kt-menu-item-hover:before:bg-primary">
-                                        </span>
-                                        <span class="kt-menu-title text-2sm font-normal text-foreground kt-menu-item-active:text-primary kt-menu-item-active:font-semibold kt-menu-link-hover:!text-primary">
-                                            L4
-                                        </span>
-                                    </a>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                      
-
-
+   
 
                         <!-- Administrador -->
                         <div class="kt-menu-item pt-2.25 pb-px">
